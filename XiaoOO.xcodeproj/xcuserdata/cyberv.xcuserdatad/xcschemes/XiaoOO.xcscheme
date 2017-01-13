@@ -20,6 +20,20 @@
                ReferencedContainer = "container:XiaoOO.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "NO"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3C7687561E24EA5700DDAAC2"
+               BuildableName = "MyXiaoOOFrameworkTests.xctest"
+               BlueprintName = "MyXiaoOOFrameworkTests"
+               ReferencedContainer = "container:XiaoOO.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
