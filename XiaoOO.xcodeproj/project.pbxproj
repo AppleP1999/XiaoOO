@@ -13,7 +13,20 @@
 		3C04AB6B1E28D32900CE5D94 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AB681E28D32900CE5D94 /* MPLoggerFormatter.m */; };
 		3C04AB6C1E28D32900CE5D94 /* MyFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AB6A1E28D32900CE5D94 /* MyFileLogger.m */; };
 		3C04AC741E28D7F300CE5D94 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AC731E28D7F300CE5D94 /* UIView+Extension.m */; };
-		3C04AD7C1E28DD6600CE5D94 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AD7B1E28DD6600CE5D94 /* NSDate+Utilities.m */; };
+		3C6A47121E2C599000A31792 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A47111E2C599000A31792 /* NSDate+Utilities.m */; };
+		3C6A47131E2C599000A31792 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A47111E2C599000A31792 /* NSDate+Utilities.m */; };
+		3C6A484F1E2CABFA00A31792 /* DDSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A484E1E2CABFA00A31792 /* DDSettingItem.m */; };
+		3C6A48501E2CABFA00A31792 /* DDSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A484E1E2CABFA00A31792 /* DDSettingItem.m */; };
+		3C6A48571E2CB01800A31792 /* CCPActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A48531E2CB01800A31792 /* CCPActionSheetCell.m */; };
+		3C6A48581E2CB01800A31792 /* CCPActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A48531E2CB01800A31792 /* CCPActionSheetCell.m */; };
+		3C6A48591E2CB01800A31792 /* CCPActionSheetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6A48541E2CB01800A31792 /* CCPActionSheetCell.xib */; };
+		3C6A485A1E2CB01800A31792 /* CCPActionSheetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6A48541E2CB01800A31792 /* CCPActionSheetCell.xib */; };
+		3C6A485B1E2CB01800A31792 /* CCPActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A48561E2CB01800A31792 /* CCPActionSheetView.m */; };
+		3C6A485C1E2CB01800A31792 /* CCPActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A48561E2CB01800A31792 /* CCPActionSheetView.m */; };
+		3C6A48611E2CB81000A31792 /* DDTextFieldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A485F1E2CB81000A31792 /* DDTextFieldButton.m */; };
+		3C6A48621E2CB81000A31792 /* DDTextFieldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A485F1E2CB81000A31792 /* DDTextFieldButton.m */; };
+		3C6A48631E2CB81000A31792 /* DDTextFieldButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6A48601E2CB81000A31792 /* DDTextFieldButton.xib */; };
+		3C6A48641E2CB81000A31792 /* DDTextFieldButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6A48601E2CB81000A31792 /* DDTextFieldButton.xib */; };
 		3C7686C21E24DB3000DDAAC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7686C11E24DB3000DDAAC2 /* main.m */; };
 		3C7686CD1E24DB3000DDAAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7686CC1E24DB3000DDAAC2 /* Assets.xcassets */; };
 		3C7686D01E24DB3000DDAAC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7686CE1E24DB3000DDAAC2 /* LaunchScreen.storyboard */; };
@@ -72,8 +85,18 @@
 		3C04AC721E28D7F300CE5D94 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		3C04AC731E28D7F300CE5D94 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		3C04AC751E28D99400CE5D94 /* MBTargetConfigContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTargetConfigContants.h; sourceTree = "<group>"; };
-		3C04AD7A1E28DD6600CE5D94 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
-		3C04AD7B1E28DD6600CE5D94 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		3C6A47101E2C599000A31792 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		3C6A47111E2C599000A31792 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		3C6A484D1E2CABFA00A31792 /* DDSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSettingItem.h; sourceTree = "<group>"; };
+		3C6A484E1E2CABFA00A31792 /* DDSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSettingItem.m; sourceTree = "<group>"; };
+		3C6A48521E2CB01800A31792 /* CCPActionSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPActionSheetCell.h; sourceTree = "<group>"; };
+		3C6A48531E2CB01800A31792 /* CCPActionSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPActionSheetCell.m; sourceTree = "<group>"; };
+		3C6A48541E2CB01800A31792 /* CCPActionSheetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCPActionSheetCell.xib; sourceTree = "<group>"; };
+		3C6A48551E2CB01800A31792 /* CCPActionSheetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPActionSheetView.h; sourceTree = "<group>"; };
+		3C6A48561E2CB01800A31792 /* CCPActionSheetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPActionSheetView.m; sourceTree = "<group>"; };
+		3C6A485E1E2CB81000A31792 /* DDTextFieldButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTextFieldButton.h; sourceTree = "<group>"; };
+		3C6A485F1E2CB81000A31792 /* DDTextFieldButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTextFieldButton.m; sourceTree = "<group>"; };
+		3C6A48601E2CB81000A31792 /* DDTextFieldButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDTextFieldButton.xib; sourceTree = "<group>"; };
 		3C7686BD1E24DB3000DDAAC2 /* XiaoOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7686C11E24DB3000DDAAC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C7686CC1E24DB3000DDAAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,12 +177,35 @@
 		3C04AC711E28D7F300CE5D94 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				3C04AD7A1E28DD6600CE5D94 /* NSDate+Utilities.h */,
-				3C04AD7B1E28DD6600CE5D94 /* NSDate+Utilities.m */,
 				3C04AC721E28D7F300CE5D94 /* UIView+Extension.h */,
 				3C04AC731E28D7F300CE5D94 /* UIView+Extension.m */,
+				3C6A47101E2C599000A31792 /* NSDate+Utilities.h */,
+				3C6A47111E2C599000A31792 /* NSDate+Utilities.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		3C6A48511E2CB01800A31792 /* CCPActionSheetView */ = {
+			isa = PBXGroup;
+			children = (
+				3C6A485D1E2CB81000A31792 /* textField */,
+				3C6A48521E2CB01800A31792 /* CCPActionSheetCell.h */,
+				3C6A48531E2CB01800A31792 /* CCPActionSheetCell.m */,
+				3C6A48541E2CB01800A31792 /* CCPActionSheetCell.xib */,
+				3C6A48551E2CB01800A31792 /* CCPActionSheetView.h */,
+				3C6A48561E2CB01800A31792 /* CCPActionSheetView.m */,
+			);
+			path = CCPActionSheetView;
+			sourceTree = "<group>";
+		};
+		3C6A485D1E2CB81000A31792 /* textField */ = {
+			isa = PBXGroup;
+			children = (
+				3C6A485E1E2CB81000A31792 /* DDTextFieldButton.h */,
+				3C6A485F1E2CB81000A31792 /* DDTextFieldButton.m */,
+				3C6A48601E2CB81000A31792 /* DDTextFieldButton.xib */,
+			);
+			path = textField;
 			sourceTree = "<group>";
 		};
 		3C7686B41E24DB3000DDAAC2 = {
@@ -274,6 +320,7 @@
 		3C7686FD1E24DB5A00DDAAC2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				3C6A48511E2CB01800A31792 /* CCPActionSheetView */,
 				3C04AB661E28D32900CE5D94 /* Logger(日志记录) */,
 				3C7686FE1E24DB5A00DDAAC2 /* GCDHelper(GCD助手) */,
 			);
@@ -338,6 +385,8 @@
 			isa = PBXGroup;
 			children = (
 				3C76870D1E24DB5A00DDAAC2 /* Placeholder */,
+				3C6A484D1E2CABFA00A31792 /* DDSettingItem.h */,
+				3C6A484E1E2CABFA00A31792 /* DDSettingItem.m */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -658,6 +707,7 @@
 		3C7686B51E24DB3000DDAAC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DD;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = cyw_dj;
 				TargetAttributes = {
@@ -702,10 +752,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6A48591E2CB01800A31792 /* CCPActionSheetCell.xib in Resources */,
 				3C7687381E24DB5A00DDAAC2 /* Placeholder in Resources */,
 				3C7686D01E24DB3000DDAAC2 /* LaunchScreen.storyboard in Resources */,
 				3C7687391E24DB5A00DDAAC2 /* Placeholder in Resources */,
 				3C7686CD1E24DB3000DDAAC2 /* Assets.xcassets in Resources */,
+				3C6A48631E2CB81000A31792 /* DDTextFieldButton.xib in Resources */,
 				3C76873A1E24DB5A00DDAAC2 /* Placeholder in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -714,6 +766,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6A485A1E2CB01800A31792 /* CCPActionSheetCell.xib in Resources */,
+				3C6A48641E2CB81000A31792 /* DDTextFieldButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,13 +809,17 @@
 				3C04AB6B1E28D32900CE5D94 /* MPLoggerFormatter.m in Sources */,
 				3C76873C1E24DB5A00DDAAC2 /* AppDelegate.m in Sources */,
 				3C7686C21E24DB3000DDAAC2 /* main.m in Sources */,
+				3C6A47121E2C599000A31792 /* NSDate+Utilities.m in Sources */,
 				3C7687371E24DB5A00DDAAC2 /* GCDTimer.m in Sources */,
+				3C6A485B1E2CB01800A31792 /* CCPActionSheetView.m in Sources */,
 				3C04AB6C1E28D32900CE5D94 /* MyFileLogger.m in Sources */,
+				3C6A484F1E2CABFA00A31792 /* DDSettingItem.m in Sources */,
 				3C76873B1E24DB5A00DDAAC2 /* DDMianViewController.m in Sources */,
-				3C04AD7C1E28DD6600CE5D94 /* NSDate+Utilities.m in Sources */,
 				3C7687351E24DB5A00DDAAC2 /* GCDQueue.m in Sources */,
+				3C6A48611E2CB81000A31792 /* DDTextFieldButton.m in Sources */,
 				3CED31951E272CAC0020CF40 /* DDTabBarView.m in Sources */,
 				3C04AC741E28D7F300CE5D94 /* UIView+Extension.m in Sources */,
+				3C6A48571E2CB01800A31792 /* CCPActionSheetCell.m in Sources */,
 				3C7687361E24DB5A00DDAAC2 /* GCDSemaphore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -770,7 +828,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6A48581E2CB01800A31792 /* CCPActionSheetCell.m in Sources */,
+				3C6A485C1E2CB01800A31792 /* CCPActionSheetView.m in Sources */,
+				3C6A47131E2C599000A31792 /* NSDate+Utilities.m in Sources */,
 				3C7686DB1E24DB3000DDAAC2 /* XiaoOOTests.m in Sources */,
+				3C6A48501E2CABFA00A31792 /* DDSettingItem.m in Sources */,
+				3C6A48621E2CB81000A31792 /* DDTextFieldButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

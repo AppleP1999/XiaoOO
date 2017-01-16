@@ -16,6 +16,7 @@
 #import "MPTargetConfigMacros.h"
 #import <Masonry/Masonry.h>
 #import "MBTargetConfigContants.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 //#import <ReactiveCocoa/ReactiveCocoa.h>
 #endif /* PrefixHeader_pch */
