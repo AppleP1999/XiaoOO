@@ -24,7 +24,9 @@
 {
     [super awakeFromNib];
     self.DDTextField.layer.borderWidth = 1;
-    self.DDTextField.layer.borderColor = [UIColor grayColor].CGColor;
+    self.DDTextField.layer.borderColor =  RGBA(234, 234, 234, 1.0).CGColor;
+    //[UIColor grayColor].CGColor;
+    
 }
 -(void)addTarget:(targetBlock)b
 {

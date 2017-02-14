@@ -41,6 +41,7 @@
 		3C76873A1E24DB5A00DDAAC2 /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 3C7687121E24DB5A00DDAAC2 /* Placeholder */; };
 		3C76873B1E24DB5A00DDAAC2 /* DDMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7687161E24DB5A00DDAAC2 /* DDMianViewController.m */; };
 		3C76873C1E24DB5A00DDAAC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C76872C1E24DB5A00DDAAC2 /* AppDelegate.m */; };
+		3CC965EA1E3494B800E07085 /* DDInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC965E91E3494B800E07085 /* DDInputAccessoryView.m */; };
 		3CED31951E272CAC0020CF40 /* DDTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CED31941E272CAC0020CF40 /* DDTabBarView.m */; };
 		3CED31981E27927F0020CF40 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CED31961E2791DE0020CF40 /* Masonry.framework */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,8 @@
 		3C76872B1E24DB5A00DDAAC2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C76872C1E24DB5A00DDAAC2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3C76872E1E24DB5A00DDAAC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3CC965E81E3494B800E07085 /* DDInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDInputAccessoryView.h; sourceTree = "<group>"; };
+		3CC965E91E3494B800E07085 /* DDInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDInputAccessoryView.m; sourceTree = "<group>"; };
 		3CED31931E272CAC0020CF40 /* DDTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTabBarView.h; sourceTree = "<group>"; };
 		3CED31941E272CAC0020CF40 /* DDTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTabBarView.m; sourceTree = "<group>"; };
 		3CED31961E2791DE0020CF40 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
@@ -183,6 +186,15 @@
 				3C6A47111E2C599000A31792 /* NSDate+Utilities.m */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		3C6063ED1E2DE8E400CEA295 /* DDInputAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				3CC965E81E3494B800E07085 /* DDInputAccessoryView.h */,
+				3CC965E91E3494B800E07085 /* DDInputAccessoryView.m */,
+			);
+			path = DDInputAccessoryView;
 			sourceTree = "<group>";
 		};
 		3C6A48511E2CB01800A31792 /* CCPActionSheetView */ = {
@@ -320,6 +332,7 @@
 		3C7686FD1E24DB5A00DDAAC2 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				3C6063ED1E2DE8E400CEA295 /* DDInputAccessoryView */,
 				3C6A48511E2CB01800A31792 /* CCPActionSheetView */,
 				3C04AB661E28D32900CE5D94 /* Logger(日志记录) */,
 				3C7686FE1E24DB5A00DDAAC2 /* GCDHelper(GCD助手) */,
@@ -818,6 +831,7 @@
 				3C7687351E24DB5A00DDAAC2 /* GCDQueue.m in Sources */,
 				3C6A48611E2CB81000A31792 /* DDTextFieldButton.m in Sources */,
 				3CED31951E272CAC0020CF40 /* DDTabBarView.m in Sources */,
+				3CC965EA1E3494B800E07085 /* DDInputAccessoryView.m in Sources */,
 				3C04AC741E28D7F300CE5D94 /* UIView+Extension.m in Sources */,
 				3C6A48571E2CB01800A31792 /* CCPActionSheetCell.m in Sources */,
 				3C7687361E24DB5A00DDAAC2 /* GCDSemaphore.m in Sources */,

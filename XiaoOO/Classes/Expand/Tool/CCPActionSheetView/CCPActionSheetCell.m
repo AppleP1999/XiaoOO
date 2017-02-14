@@ -16,8 +16,6 @@
 
 @implementation CCPActionSheetCell
 
-- (void)awakeFromNib {
-    
-}
+
 
 @end

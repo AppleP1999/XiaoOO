@@ -9,9 +9,12 @@
 #import "DDTabBarView.h"
 #import "CCPActionSheetView.h"
 #import "Macros.h"
+#import "DDInputAccessoryView.h"
+//#import "UUInputAccessoryView.h"
 @interface DDTabBarView ()
 @property  (nonatomic ,weak) UIButton *btn_Left;
 @property  (nonatomic ,weak) UIButton *btn_Rithg;
+@property  (nonatomic,weak) UIButton *btn_conter;
 @end
 @implementation DDTabBarView
 - (instancetype)init
@@ -22,6 +25,8 @@
         [self initButtons];
         [self set_UI];
         [self actions];
+   
+        
     }
     return self;
 }
@@ -33,6 +38,7 @@
     btn_left.backgroundColor = [UIColor redColor];
     [self addSubview:btn_left];
     self.btn_Left = btn_left;
+   
     UIButton * btn_rithg = [[UIButton alloc]init];
     [btn_rithg addTarget:self action:@selector(func_btn_rithg) forControlEvents:UIControlEventTouchUpInside];
     btn_rithg.backgroundColor = [UIColor redColor];
@@ -40,15 +46,16 @@
     self.btn_Rithg = btn_rithg;
    
    
-    
-   
+    UIButton * btn_conter = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 120, 80)];
+    btn_conter.backgroundColor = [UIColor redColor];
+    [self addSubview:btn_conter];
+    self.btn_conter = btn_conter;
     
     
 }
 -(void)actions
 {
 
-    
     [[self.btn_Left rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         NSLog(@"----Click---- Click ----Click ");
         
@@ -62,6 +69,8 @@
         }];
 
     }];
+    
+    
 }
 -(void)set_UI 
 {
@@ -70,8 +79,22 @@
         make.width.mas_equalTo(40);
         make.height.mas_equalTo(40);
         make.left.mas_equalTo(10);
+        
     }];
-  
+    [self.btn_Rithg mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(10);
+        make.width.mas_equalTo(40);
+        make.height.mas_equalTo(40);
+        make.right.mas_equalTo(-10);
+    }];
+    [self.btn_conter mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(10);
+        make.width.mas_equalTo(40);
+        make.height.mas_equalTo(40);
+        
+        make.centerX.mas_equalTo(self);
+    }];
+
 }
 -(void)func_btn_rithg
 {

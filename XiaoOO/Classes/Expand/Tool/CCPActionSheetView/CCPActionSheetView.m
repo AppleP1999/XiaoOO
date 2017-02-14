@@ -10,7 +10,7 @@
 //#import "UIView+CCPExtension.h"
 #import "CCPActionSheetCell.h"
 #import "DDTextFieldButton.h"
-#define CCPWIDTH [UIScreen mainScreen].bounds.size.width
+ #define CCPWIDTH [UIScreen mainScreen].bounds.size.width
 #define CCPHEIGHT [UIScreen mainScreen].bounds.size.height
 
 @interface CCPActionSheetView ()<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate>
@@ -31,7 +31,7 @@
 
 @property (nonatomic,assign)CGFloat alertViewW;
 @property (nonatomic,assign)CGFloat alertViewH;
-
+@property(nonatomic,strong)DDTextFieldButton * textFild_btn;
 @end
 
 @implementation CCPActionSheetView
@@ -225,11 +225,16 @@
         [textFieldID returnTextfiled:^(NSString *str) {
             NSLog(@"   str - %@" , str);
         }];
-        [cell.contentView addSubview:textFieldID];
+        
+        [cell addSubview:textFieldID];
         [textFieldID mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.equalTo(cell.contentView).top.offset(-2);
-            make.centerX.equalTo(cell.contentView);
-            make.size.mas_equalTo(CGSizeMake(400, 44));
+
+            make.top.mas_equalTo(10);
+            
+             make.centerX.equalTo(cell.contentView);
+             make.width.mas_equalTo(cell.contentView).multipliedBy(1.0);// 高/宽 == 0.6
+
+            
             
         }];
     }
@@ -262,7 +267,7 @@
     _isBGClose = isBGClose;
     
     if (isBGClose) {
-        
+    
         [self removeGestureRecognizer:self.alertTap];
         
     }
