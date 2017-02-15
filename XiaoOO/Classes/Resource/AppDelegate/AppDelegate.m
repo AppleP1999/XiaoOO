@@ -22,7 +22,8 @@
     DDMianViewController * mian = [[DDMianViewController alloc]init];
     //日志初始化
     [MyFileLogger sharedManager];
-    self.window.rootViewController = mian;
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:mian];
+    self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;
 }

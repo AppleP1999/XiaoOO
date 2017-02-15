@@ -12,7 +12,7 @@
 
 #import "DDTabBarView.h"
 #import "DDInputAccessoryView.h"
-
+#import "DDLevelMeterView.h"
 static const  NSString *  DD_Mind_bg_img = @"bg_img";
 static const  NSString *  DD_Mind_home_tinyo   = @"home_tinyo";
 @interface DDMianViewController ()
@@ -28,12 +28,13 @@ static const  NSString *  DD_Mind_home_tinyo   = @"home_tinyo";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+
     self.no= NO;
     [self setBackImage];
     [self initUI];
     [self set_UIConstraints];
 
-    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 120, 80)];
+    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(60, setHeight(141), 120, 80)];
     
     UIImage * image1 = [UIImage imageNamed:@"arrow_down_icon"];
     UIImage * image2 = [UIImage imageNamed:@"arrow_up_icon"];
@@ -42,12 +43,21 @@ static const  NSString *  DD_Mind_home_tinyo   = @"home_tinyo";
     [btn setImage:image2 forState:UIControlStateSelected];
      btn.backgroundColor = [UIColor redColor];
     btn.size = image1.size;
-    [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton * x) {
-        NSLog(@"-Click ---- ------Click -");
+    DDLevelMeterView * v = [[DDLevelMeterView alloc]init];
+    v.size = CGSizeMake(200, 40);
+    v.x = 80;
+    v.y = 90;
+    [self.view addSubview:v];
+    [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton * x)
+    {
+        
+        NSLog(@"-Click ---- ------Click - %@" ,self.btn_shart);
+        [v updateImg:0.1];
+        
     }];
     [self.view addSubview:btn];
     
-
+    
     
     
     
@@ -56,7 +66,11 @@ static const  NSString *  DD_Mind_home_tinyo   = @"home_tinyo";
 {
     UIImageView * backView= [[UIImageView alloc]initWithImage:GetImage(DD_Mind_bg_img)];
     [self.view addSubview: backView];
+    [backView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.bottom.mas_equalTo(0);
+    }];
     UIButton * btn_shart = [[UIButton alloc]init];
+//    btn_shart.backgroundColor = [UIColor redColor];
     [btn_shart setImage:GetImage(DD_Mind_home_tinyo) forState:UIControlStateNormal];
     [self.view addSubview:btn_shart];
     self.btn_shart = btn_shart;
@@ -87,15 +101,24 @@ static const  NSString *  DD_Mind_home_tinyo   = @"home_tinyo";
         make.bottom.left.right.mas_equalTo(0);
         make.height.mas_equalTo(60);
     }];
+    
     [self.btn_shart mas_makeConstraints:^(MASConstraintMaker *make) {
-        
         make.size.mas_equalTo(self.btn_shart.currentImage.size);
-        make.centerX.mas_equalTo(self.view).offset(self.btn_shart.width/2);
-        make.top.mas_equalTo(70.5);
+        make.centerX.mas_equalTo(self.view).offset(45) ;
+        make.top.mas_equalTo(setHeight(141)) ;
     }];
+    
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+
+    
     // Dispose of any resources that can be recreated.
 }
 

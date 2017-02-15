@@ -12,8 +12,8 @@
 #define CHINESE_SYSTEM(x) [UIFont fontWithName:CHINESE_FONT_NAME size:x]
 
 //不同屏幕尺寸字体适配（320，568是因为效果图为IPHONE5 如果不是则根据实际情况修改）
-#define kScreenWidthRatio  (Main_Screen_Width / 320.0)
-#define kScreenHeightRatio (Main_Screen_Height / 568.0)
+#define kScreenWidthRatio  (Main_Screen_Width / 375.0)
+#define kScreenHeightRatio (Main_Screen_Height / 667.0)
 #define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
 #define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
 #define AdaptedFontSize(R)     CHINESE_SYSTEM(AdaptedWidth(R))
@@ -30,6 +30,7 @@
 #define GetViewHeight(view) view.frame.size.height
 #define GetViewX(view)      view.frame.origin.x
 #define GetViewY(view)      view.frame.origin.y
+#define setHeight(height)      height+20
 
 // MainScreen Height&Width
 #define Main_Screen_Height      [[UIScreen mainScreen] bounds].size.height

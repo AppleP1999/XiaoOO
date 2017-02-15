@@ -13,6 +13,7 @@
 		3C04AB6B1E28D32900CE5D94 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AB681E28D32900CE5D94 /* MPLoggerFormatter.m */; };
 		3C04AB6C1E28D32900CE5D94 /* MyFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AB6A1E28D32900CE5D94 /* MyFileLogger.m */; };
 		3C04AC741E28D7F300CE5D94 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AC731E28D7F300CE5D94 /* UIView+Extension.m */; };
+		3C144AB81E542F4C0077F10D /* DDLevelMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C144AB71E542F4C0077F10D /* DDLevelMeterView.m */; };
 		3C6A47121E2C599000A31792 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A47111E2C599000A31792 /* NSDate+Utilities.m */; };
 		3C6A47131E2C599000A31792 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A47111E2C599000A31792 /* NSDate+Utilities.m */; };
 		3C6A484F1E2CABFA00A31792 /* DDSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A484E1E2CABFA00A31792 /* DDSettingItem.m */; };
@@ -86,6 +87,8 @@
 		3C04AC721E28D7F300CE5D94 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		3C04AC731E28D7F300CE5D94 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		3C04AC751E28D99400CE5D94 /* MBTargetConfigContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTargetConfigContants.h; sourceTree = "<group>"; };
+		3C144AB61E542F4C0077F10D /* DDLevelMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLevelMeterView.h; sourceTree = "<group>"; };
+		3C144AB71E542F4C0077F10D /* DDLevelMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLevelMeterView.m; sourceTree = "<group>"; };
 		3C6A47101E2C599000A31792 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
 		3C6A47111E2C599000A31792 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		3C6A484D1E2CABFA00A31792 /* DDSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSettingItem.h; sourceTree = "<group>"; };
@@ -474,6 +477,8 @@
 			children = (
 				3CED31931E272CAC0020CF40 /* DDTabBarView.h */,
 				3CED31941E272CAC0020CF40 /* DDTabBarView.m */,
+				3C144AB61E542F4C0077F10D /* DDLevelMeterView.h */,
+				3C144AB71E542F4C0077F10D /* DDLevelMeterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -835,6 +840,7 @@
 				3C04AC741E28D7F300CE5D94 /* UIView+Extension.m in Sources */,
 				3C6A48571E2CB01800A31792 /* CCPActionSheetCell.m in Sources */,
 				3C7687361E24DB5A00DDAAC2 /* GCDSemaphore.m in Sources */,
+				3C144AB81E542F4C0077F10D /* DDLevelMeterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
