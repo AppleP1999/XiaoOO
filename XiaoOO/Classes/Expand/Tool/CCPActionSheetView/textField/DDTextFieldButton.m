@@ -9,7 +9,7 @@
 #import "DDTextFieldButton.h"
 
 @interface DDTextFieldButton ()<UITextFieldDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *DDTextField;
+
 
 @property (weak, nonatomic) IBOutlet UIButton *affirmButton;
 
@@ -23,7 +23,7 @@
 -(void)awakeFromNib
 {
     [super awakeFromNib];
-    self.DDTextField.layer.borderWidth = 1;
+    self.DDTextField.layer.borderWidth =2;
     self.DDTextField.layer.borderColor =  RGBA(234, 234, 234, 1.0).CGColor;
     //[UIColor grayColor].CGColor;
     

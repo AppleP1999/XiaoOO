@@ -9,7 +9,14 @@
 
 //中文字体
 #define CHINESE_FONT_NAME  @"Heiti SC"
+#define NAME_PingHei_Text @"PingHei-Text"
+#define NAME_PingHei_Light @"PingHei-Light"
+#define NAME_ProximaNova_Semibold @"ProximaNova-Semibold"
+
 #define CHINESE_SYSTEM(x) [UIFont fontWithName:CHINESE_FONT_NAME size:x]
+#define FONT_PingHei_Text(x) [UIFont fontWithName:NAME_PingHei_Text size:x]
+#define FONT_PingHei_Light(x) [UIFont fontWithName:NAME_PingHei_Light size:x]
+#define FONT_ProximaNova_Semibold(x) [UIFont fontWithName:NAME_ProximaNova_Semibold size:x]
 
 //不同屏幕尺寸字体适配（320，568是因为效果图为IPHONE5 如果不是则根据实际情况修改）
 #define kScreenWidthRatio  (Main_Screen_Width / 375.0)

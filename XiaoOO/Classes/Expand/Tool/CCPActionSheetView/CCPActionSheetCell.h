@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DDTextFieldButton.h"
 
 @interface CCPActionSheetCell : UITableViewCell
+@property(nonatomic,strong)DDTextFieldButton * text_btn;
 @property (weak, nonatomic) IBOutlet UIView *topView;
 
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *toTopCconstraint;
-
+@property(nonatomic,strong)NSIndexPath * indexpath;
 @end

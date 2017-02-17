@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DDMianViewController.h"
+#import "DDNavigationController.h"
 #import "MyFileLogger.h"
 @interface AppDelegate ()
 
@@ -22,7 +23,7 @@
     DDMianViewController * mian = [[DDMianViewController alloc]init];
     //日志初始化
     [MyFileLogger sharedManager];
-    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:mian];
+    DDNavigationController * nav = [[DDNavigationController alloc]initWithRootViewController:mian];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;

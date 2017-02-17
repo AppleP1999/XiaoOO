@@ -13,6 +13,7 @@ typedef void (^targetTextStringBlock)(NSString*str);
 @interface DDTextFieldButton : UIView
 
 +(instancetype)dropdown;
+@property (weak, nonatomic) IBOutlet UITextField *DDTextField;
 @property(nonatomic,copy)NSString  * textSting;
 @property(nonatomic,copy)targetBlock  targetBlock;
 @property(nonatomic,copy)targetTextStringBlock  TextStringBlock;

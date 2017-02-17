@@ -33,7 +33,7 @@
 @property (nonatomic,assign)CGFloat alertViewH;
 @property(nonatomic,strong)DDTextFieldButton * textFild_btn;
 @end
-
+//settingDataArray_ip
 @implementation CCPActionSheetView
 
 - (UITableView *)actionSheetTableView {
@@ -209,34 +209,30 @@
     cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:246.0/255.0 green:246.0/255.0  blue:246.0/255.0  alpha:1.0];
     
     cell.infoLabel.text = self.dataArray[indexPath.row];
-    
+    cell.indexpath  = indexPath;
     if (indexPath.row == self.dataArray.count - 1) {
         
         cell.topView.hidden = NO;
-        
-    } else {
-        
+        cell.infoLabel.hidden = YES;
+    } else {  
         cell.topView.hidden = YES;
         cell.toTopCconstraint.constant = -10;
         
     }
     if (indexPath.row == self.dataArray.count-1) {
-        DDTextFieldButton * textFieldID = [DDTextFieldButton dropdown];
-        [textFieldID returnTextfiled:^(NSString *str) {
-            NSLog(@"   str - %@" , str);
-        }];
-        
-        [cell addSubview:textFieldID];
-        [textFieldID mas_makeConstraints:^(MASConstraintMaker *make) {
-
-            make.top.mas_equalTo(10);
-            
-             make.centerX.equalTo(cell.contentView);
-             make.width.mas_equalTo(cell.contentView).multipliedBy(1.0);// 高/宽 == 0.6
-
-            
-            
-        }];
+//        DDTextFieldButton * textFieldID = [DDTextFieldButton dropdown];
+//        [textFieldID returnTextfiled:^(NSString *str) {
+//            NSLog(@"   str - %@" , str);
+//        }];
+//        
+//        [cell.contentView addSubview:textFieldID];
+//        [textFieldID mas_makeConstraints:^(MASConstraintMaker *make) {
+//            
+//            make.top.mas_equalTo(10);
+//            make.centerX.equalTo(cell.contentView);
+//            make.width.mas_equalTo(cell.contentView).multipliedBy(1.0);// 高/宽 == 0.6
+// 
+//        }];
     }
     
     return cell;
@@ -251,7 +247,7 @@
         self.cellDidSelectBlock(self.dataArray[indexPath.row],indexPath.row);
     }
     
-    [self dissMissView];
+    indexPath.row==0 ?  :[self dissMissView];
 }
 
 

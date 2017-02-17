@@ -14,6 +14,12 @@
 #define img_conter_h (self.btn_conter.width/2+20)
 //#import "UUInputAccessoryView.h"
 static const NSString * tabbar_head = @"tabbar_head";
+static const NSString * tabbar_backhome_normal = @"tabbar_backhome_normal";
+static const NSString * tabbar_backhome_highlight = @"tabbar_backhome_highlight";
+static const NSString * tabbar_help_normal = @"tabbar_help_normal";
+static const NSString * tabbar_help_highlight = @"tabbar_help_highlight";
+
+
 //static const CGFloat  img_conter_ =  ;
 @interface DDTabBarView ()
 @property  (nonatomic ,weak) UIButton *btn_Left;
@@ -27,8 +33,10 @@ static const NSString * tabbar_head = @"tabbar_head";
 {
     self = [super init];
     if (self) {
-        self.backgroundColor = RGBA(99, 98, 99, 0.2);
+        self.backgroundColor = RGBA(0, 0, 0, 0);
+
         [self initButtons];
+        [self  set_All_img];
         [self initImgview];
         [self set_Constraints];
         //点击事件
@@ -38,6 +46,14 @@ static const NSString * tabbar_head = @"tabbar_head";
     }
     return self;
 }
+-(void)set_All_img{
+    [self.btn_Left setBackgroundImage:GetImage(tabbar_backhome_normal) forState:0];
+    [self.btn_Left setBackgroundImage:GetImage(tabbar_backhome_highlight) forState:UIControlStateHighlighted];
+    
+    [self.btn_Rithg setBackgroundImage:GetImage(tabbar_help_normal) forState:0];
+    [self.btn_Rithg setBackgroundImage:GetImage(tabbar_help_highlight) forState:UIControlStateHighlighted];
+}
+
 -(void)initImgview
 {
     DDLevelMeterView * meterView = [[DDLevelMeterView alloc]init];
@@ -53,7 +69,7 @@ static const NSString * tabbar_head = @"tabbar_head";
 {
     UIButton * btn_left = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 120, 80)];
     [btn_left addTarget:self action:@selector(func_btn_left) forControlEvents:UIControlEventTouchUpInside];
-    btn_left.backgroundColor = [UIColor grayColor];
+//    btn_left.backgroundColor = [UIColor grayColor];
     [self addSubview:btn_left];
     [self.btn_Left setBackgroundImage:GetImage(@"nav_arrow") forState:UIControlStateNormal];
     self.btn_Left = btn_left;
@@ -62,13 +78,13 @@ static const NSString * tabbar_head = @"tabbar_head";
     [btn_rithg addTarget:self action:@selector(func_btn_rithg) forControlEvents:UIControlEventTouchUpInside];
     [self.btn_Rithg setImage:GetImage(@"nav_arrow") forState:UIControlStateNormal];
 
-    btn_rithg.backgroundColor = [UIColor grayColor];
+//    btn_rithg.backgroundColor = [UIColor grayColor];
     [self addSubview:btn_rithg];
     self.btn_Rithg = btn_rithg;
    
    
     UIButton * btn_conter = [[UIButton alloc]initWithFrame:CGRectMake(100, 200, 120, 80)];
-    btn_conter.backgroundColor = [UIColor redColor];
+//    btn_conter.backgroundColor = [UIColor redColor];
     [btn_conter setBackgroundImage:GetImage(tabbar_head) forState:UIControlStateNormal];
     [self addSubview:btn_conter];
     self.btn_conter = btn_conter;
@@ -100,25 +116,25 @@ static const NSString * tabbar_head = @"tabbar_head";
         make.top.mas_equalTo(10);
         make.width.mas_equalTo(44);
         make.height.mas_equalTo(44);
+//        make.size.mas_equalTo(self.btn_Left.currentBackgroundImage.size);
         make.left.mas_equalTo(12);
         
     }];
     [self.btn_Rithg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(10);
+//        make.size.mas_equalTo(self.btn_Left.currentBackgroundImage.size);
         make.width.mas_equalTo(44);
         make.height.mas_equalTo(44);
         make.right.mas_equalTo(-12);
     }];
     [self.btn_conter mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(10);
-//        make.width.mas_equalTo(40);
-//        make.height.mas_equalTo(40);
+ 
         make.size.mas_equalTo(self.btn_conter.currentBackgroundImage.size);
         make.centerY.mas_equalTo(self);
         make.centerX.mas_equalTo(self);
     }];
     [self.img_left_meterView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(10);
+        
         make.width.mas_equalTo(60);
         make.height.mas_equalTo(55);
         make.centerY.mas_equalTo(self);
@@ -126,8 +142,7 @@ static const NSString * tabbar_head = @"tabbar_head";
     }];
     
     [self.img_rithg_meterView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.top.mas_equalTo(10);
-        make.width.mas_equalTo(60);
+         make.width.mas_equalTo(60);
         make.height.mas_equalTo(55);
         make.centerX.mas_equalTo(self).offset(-img_conter_h);
         make.centerY.mas_equalTo(self);

@@ -42,6 +42,16 @@
 		3C76873A1E24DB5A00DDAAC2 /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 3C7687121E24DB5A00DDAAC2 /* Placeholder */; };
 		3C76873B1E24DB5A00DDAAC2 /* DDMianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7687161E24DB5A00DDAAC2 /* DDMianViewController.m */; };
 		3C76873C1E24DB5A00DDAAC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C76872C1E24DB5A00DDAAC2 /* AppDelegate.m */; };
+		3C90FC171E55724E006C15DF /* DDSettingViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FC161E55724E006C15DF /* DDSettingViewVC.m */; };
+		3C90FC1A1E557410006C15DF /* DDSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FC191E557410006C15DF /* DDSettingCell.m */; };
+		3C90FC1E1E55877A006C15DF /* Ping Hei Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C90FC1B1E55877A006C15DF /* Ping Hei Light.ttf */; };
+		3C90FC1F1E55877A006C15DF /* Ping Hei Text.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C90FC1C1E55877A006C15DF /* Ping Hei Text.ttf */; };
+		3C90FC201E55877A006C15DF /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3C90FC1D1E55877A006C15DF /* ProximaNova-Semibold.otf */; };
+		3C90FC231E55957B006C15DF /* DDConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FC221E55957B006C15DF /* DDConst.m */; };
+		3C90FC261E5598D8006C15DF /* DDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FC251E5598D8006C15DF /* DDNavigationController.m */; };
+		3C90FC2C1E559F6E006C15DF /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FC2B1E559F6E006C15DF /* UIBarButtonItem+Extension.m */; };
+		3C9C56FF1E56F249009EF91D /* GXHUserDefaults+appSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C56FE1E56F249009EF91D /* GXHUserDefaults+appSetting.m */; };
+		3C9C57071E56FAFA009EF91D /* GXHUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C57061E56FAFA009EF91D /* GXHUserDefaults.m */; };
 		3CC965EA1E3494B800E07085 /* DDInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC965E91E3494B800E07085 /* DDInputAccessoryView.m */; };
 		3CED31951E272CAC0020CF40 /* DDTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CED31941E272CAC0020CF40 /* DDTabBarView.m */; };
 		3CED31981E27927F0020CF40 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CED31961E2791DE0020CF40 /* Masonry.framework */; };
@@ -132,6 +142,23 @@
 		3C76872B1E24DB5A00DDAAC2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C76872C1E24DB5A00DDAAC2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3C76872E1E24DB5A00DDAAC2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3C90FC151E55724E006C15DF /* DDSettingViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSettingViewVC.h; sourceTree = "<group>"; };
+		3C90FC161E55724E006C15DF /* DDSettingViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSettingViewVC.m; sourceTree = "<group>"; };
+		3C90FC181E557410006C15DF /* DDSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDSettingCell.h; sourceTree = "<group>"; };
+		3C90FC191E557410006C15DF /* DDSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDSettingCell.m; sourceTree = "<group>"; };
+		3C90FC1B1E55877A006C15DF /* Ping Hei Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ping Hei Light.ttf"; sourceTree = "<group>"; };
+		3C90FC1C1E55877A006C15DF /* Ping Hei Text.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ping Hei Text.ttf"; sourceTree = "<group>"; };
+		3C90FC1D1E55877A006C15DF /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		3C90FC211E55957B006C15DF /* DDConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDConst.h; sourceTree = "<group>"; };
+		3C90FC221E55957B006C15DF /* DDConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDConst.m; sourceTree = "<group>"; };
+		3C90FC241E5598D8006C15DF /* DDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNavigationController.h; sourceTree = "<group>"; };
+		3C90FC251E5598D8006C15DF /* DDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNavigationController.m; sourceTree = "<group>"; };
+		3C90FC2A1E559F6E006C15DF /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		3C90FC2B1E559F6E006C15DF /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		3C9C56FD1E56F246009EF91D /* GXHUserDefaults+appSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXHUserDefaults+appSetting.h"; sourceTree = "<group>"; };
+		3C9C56FE1E56F249009EF91D /* GXHUserDefaults+appSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GXHUserDefaults+appSetting.m"; sourceTree = "<group>"; };
+		3C9C57051E56FAFA009EF91D /* GXHUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHUserDefaults.h; sourceTree = "<group>"; };
+		3C9C57061E56FAFA009EF91D /* GXHUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXHUserDefaults.m; sourceTree = "<group>"; };
 		3CC965E81E3494B800E07085 /* DDInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDInputAccessoryView.h; sourceTree = "<group>"; };
 		3CC965E91E3494B800E07085 /* DDInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDInputAccessoryView.m; sourceTree = "<group>"; };
 		3CED31931E272CAC0020CF40 /* DDTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTabBarView.h; sourceTree = "<group>"; };
@@ -183,6 +210,10 @@
 		3C04AC711E28D7F300CE5D94 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3C9C56FD1E56F246009EF91D /* GXHUserDefaults+appSetting.h */,
+				3C9C56FE1E56F249009EF91D /* GXHUserDefaults+appSetting.m */,
+				3C90FC2A1E559F6E006C15DF /* UIBarButtonItem+Extension.h */,
+				3C90FC2B1E559F6E006C15DF /* UIBarButtonItem+Extension.m */,
 				3C04AC721E28D7F300CE5D94 /* UIView+Extension.h */,
 				3C04AC731E28D7F300CE5D94 /* UIView+Extension.m */,
 				3C6A47101E2C599000A31792 /* NSDate+Utilities.h */,
@@ -363,6 +394,7 @@
 		3C7687081E24DB5A00DDAAC2 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				3C9C57031E56FAFA009EF91D /* GXHUserDefaults */,
 				3C76873D1E24DF8D00DDAAC2 /* SDKFile */,
 			);
 			path = Lib;
@@ -445,8 +477,12 @@
 		3C7687141E24DB5A00DDAAC2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C90FC241E5598D8006C15DF /* DDNavigationController.h */,
+				3C90FC251E5598D8006C15DF /* DDNavigationController.m */,
 				3C7687151E24DB5A00DDAAC2 /* DDMianViewController.h */,
 				3C7687161E24DB5A00DDAAC2 /* DDMianViewController.m */,
+				3C90FC151E55724E006C15DF /* DDSettingViewVC.h */,
+				3C90FC161E55724E006C15DF /* DDSettingViewVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -479,6 +515,8 @@
 				3CED31941E272CAC0020CF40 /* DDTabBarView.m */,
 				3C144AB61E542F4C0077F10D /* DDLevelMeterView.h */,
 				3C144AB71E542F4C0077F10D /* DDLevelMeterView.m */,
+				3C90FC181E557410006C15DF /* DDSettingCell.h */,
+				3C90FC191E557410006C15DF /* DDSettingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -617,7 +655,12 @@
 		3C76872D1E24DB5A00DDAAC2 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				3C90FC1B1E55877A006C15DF /* Ping Hei Light.ttf */,
+				3C90FC1C1E55877A006C15DF /* Ping Hei Text.ttf */,
+				3C90FC1D1E55877A006C15DF /* ProximaNova-Semibold.otf */,
 				3C76872E1E24DB5A00DDAAC2 /* PrefixHeader.pch */,
+				3C90FC211E55957B006C15DF /* DDConst.h */,
+				3C90FC221E55957B006C15DF /* DDConst.m */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -648,6 +691,23 @@
 			children = (
 			);
 			path = SDKFile;
+			sourceTree = "<group>";
+		};
+		3C9C57031E56FAFA009EF91D /* GXHUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				3C9C57041E56FAFA009EF91D /* Classes */,
+			);
+			path = GXHUserDefaults;
+			sourceTree = "<group>";
+		};
+		3C9C57041E56FAFA009EF91D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3C9C57051E56FAFA009EF91D /* GXHUserDefaults.h */,
+				3C9C57061E56FAFA009EF91D /* GXHUserDefaults.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		3CED318A1E271CE50020CF40 /* Frameworks */ = {
@@ -772,9 +832,12 @@
 			files = (
 				3C6A48591E2CB01800A31792 /* CCPActionSheetCell.xib in Resources */,
 				3C7687381E24DB5A00DDAAC2 /* Placeholder in Resources */,
+				3C90FC1F1E55877A006C15DF /* Ping Hei Text.ttf in Resources */,
+				3C90FC1E1E55877A006C15DF /* Ping Hei Light.ttf in Resources */,
 				3C7686D01E24DB3000DDAAC2 /* LaunchScreen.storyboard in Resources */,
 				3C7687391E24DB5A00DDAAC2 /* Placeholder in Resources */,
 				3C7686CD1E24DB3000DDAAC2 /* Assets.xcassets in Resources */,
+				3C90FC201E55877A006C15DF /* ProximaNova-Semibold.otf in Resources */,
 				3C6A48631E2CB81000A31792 /* DDTextFieldButton.xib in Resources */,
 				3C76873A1E24DB5A00DDAAC2 /* Placeholder in Resources */,
 			);
@@ -828,12 +891,18 @@
 				3C76873C1E24DB5A00DDAAC2 /* AppDelegate.m in Sources */,
 				3C7686C21E24DB3000DDAAC2 /* main.m in Sources */,
 				3C6A47121E2C599000A31792 /* NSDate+Utilities.m in Sources */,
+				3C90FC171E55724E006C15DF /* DDSettingViewVC.m in Sources */,
 				3C7687371E24DB5A00DDAAC2 /* GCDTimer.m in Sources */,
 				3C6A485B1E2CB01800A31792 /* CCPActionSheetView.m in Sources */,
+				3C9C57071E56FAFA009EF91D /* GXHUserDefaults.m in Sources */,
 				3C04AB6C1E28D32900CE5D94 /* MyFileLogger.m in Sources */,
+				3C90FC231E55957B006C15DF /* DDConst.m in Sources */,
+				3C90FC261E5598D8006C15DF /* DDNavigationController.m in Sources */,
 				3C6A484F1E2CABFA00A31792 /* DDSettingItem.m in Sources */,
 				3C76873B1E24DB5A00DDAAC2 /* DDMianViewController.m in Sources */,
+				3C90FC2C1E559F6E006C15DF /* UIBarButtonItem+Extension.m in Sources */,
 				3C7687351E24DB5A00DDAAC2 /* GCDQueue.m in Sources */,
+				3C90FC1A1E557410006C15DF /* DDSettingCell.m in Sources */,
 				3C6A48611E2CB81000A31792 /* DDTextFieldButton.m in Sources */,
 				3CED31951E272CAC0020CF40 /* DDTabBarView.m in Sources */,
 				3CC965EA1E3494B800E07085 /* DDInputAccessoryView.m in Sources */,
@@ -841,6 +910,7 @@
 				3C6A48571E2CB01800A31792 /* CCPActionSheetCell.m in Sources */,
 				3C7687361E24DB5A00DDAAC2 /* GCDSemaphore.m in Sources */,
 				3C144AB81E542F4C0077F10D /* DDLevelMeterView.m in Sources */,
+				3C9C56FF1E56F249009EF91D /* GXHUserDefaults+appSetting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

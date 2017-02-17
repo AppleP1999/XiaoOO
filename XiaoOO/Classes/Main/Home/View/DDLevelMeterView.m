@@ -28,10 +28,11 @@ static const NSString * waveline_9  = @"waveline.9";
     self = [super init];
     if (self) {
         for (NSInteger i = 0 ; i<9; i++) {
-            UIImageView  * img = [[UIImageView alloc]initWithImage:GetImage(waveline_9)];
-            img.width = 2;
-            img.height= 5;
-            [self addSubview:img];
+            UIImage * img = GetImage(waveline_9);
+//            img = [img resizableImageWithCapInsets:UIEdgeInsetsMake(1, 1, 1, 1) resizingMode:UIImageResizingModeTile];
+            UIImageView  * imgView = [[UIImageView alloc]initWithImage:img];
+            imgView.size = CGSizeMake(3, 5);
+            [self addSubview:imgView];
         }
         [self set_Constraints];
 
