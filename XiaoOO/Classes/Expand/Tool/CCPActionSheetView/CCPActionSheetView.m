@@ -10,12 +10,13 @@
 //#import "UIView+CCPExtension.h"
 #import "CCPActionSheetCell.h"
 #import "DDTextFieldButton.h"
+
  #define CCPWIDTH [UIScreen mainScreen].bounds.size.width
 #define CCPHEIGHT [UIScreen mainScreen].bounds.size.height
 
 @interface CCPActionSheetView ()<UITableViewDataSource,UITableViewDelegate,UIGestureRecognizerDelegate>
 
-@property (strong,nonatomic)NSArray *dataArray;
+
 
 @property (strong,nonatomic)UITableView *actionSheetTableView;
 
@@ -32,10 +33,25 @@
 @property (nonatomic,assign)CGFloat alertViewW;
 @property (nonatomic,assign)CGFloat alertViewH;
 @property(nonatomic,strong)DDTextFieldButton * textFild_btn;
+@property(nonatomic,weak)DDTextFieldButton * buttomView ;
+
 @end
 //settingDataArray_ip
 @implementation CCPActionSheetView
+-(NSMutableArray *)dataArray
+{
+    if (!_dataArray) {
+        self.dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+-(void) updateTableView
+{
+    [self.actionSheetTableView reloadData];
+    
+    
 
+}
 - (UITableView *)actionSheetTableView {
     
     if (!_actionSheetTableView) {
@@ -50,17 +66,36 @@
             
             showTableViewHeight = CCPHEIGHT/3 * 2;
             
-            _actionSheetTableView.scrollEnabled = YES;
+//            _actionSheetTableView.scrollEnabled = YES;
             
         } else {
             
-            _actionSheetTableView.scrollEnabled = NO;
+//            _actionSheetTableView.scrollEnabled = NO;
             
         }
         
         self.recodeTableViewHeight = showTableViewHeight;
-        
-        _actionSheetTableView.frame = CGRectMake(0, CCPHEIGHT, CCPWIDTH, showTableViewHeight);
+       __weak DDTextFieldButton * buttomView =[ DDTextFieldButton dropdown];
+        buttomView.frame = CGRectMake(0, CCPHEIGHT, CCPWIDTH, 54);
+        [buttomView addTarget:^{
+            [self.dataArray addObject:buttomView.DDTextField.text];
+            [self updateTableView];
+        }];
+        [self addSubview:buttomView];
+        self.buttomView = buttomView;
+//        [buttomView  mas_makeConstraints:^(MASConstraintMaker *make) {
+////            make.left.right.mas_equalTo(0);
+////            make.bottom.equalTo(self.mas_bottom).offset(-44);
+//            make.height.mas_equalTo(54);
+//            make.top.equalTo(self.mas_bottom);
+//            make.width.equalTo(self.mas_width);
+//            
+////            make.size.mas_equalTo(CGSizeMake(200, 50));
+////            make.top.left.mas_equalTo(30);
+//
+////            make.
+//        }];
+        _actionSheetTableView.frame = CGRectMake(0, CCPHEIGHT+54, CCPWIDTH, showTableViewHeight);
         
         [self addSubview:_actionSheetTableView];
         
@@ -77,13 +112,13 @@
         
         self.viewStyle = @"actionSheetView";
         __weak typeof(self) weakSelf = self;
-        self.dataArray =indexTextArray;
+        [self.dataArray  setArray: indexTextArray];
         self.actionSheetTableView.dataSource = self;
         self.actionSheetTableView.delegate = self;
         
         [UIView animateWithDuration:0.25 animations:^{
-            weakSelf.actionSheetTableView.frame = CGRectMake(0, CCPHEIGHT - weakSelf.recodeTableViewHeight, CCPWIDTH, weakSelf.recodeTableViewHeight);
-            
+            weakSelf.actionSheetTableView.frame = CGRectMake(0, CCPHEIGHT - weakSelf.recodeTableViewHeight-54, CCPWIDTH, weakSelf.recodeTableViewHeight);
+                weakSelf.buttomView.frame = CGRectMake(0, CCPHEIGHT-54, CCPWIDTH, 54);
         }];
         
         UIWindow *currentWindows = [UIApplication sharedApplication].keyWindow;
@@ -209,12 +244,12 @@
     cell.selectedBackgroundView.backgroundColor = [UIColor colorWithRed:246.0/255.0 green:246.0/255.0  blue:246.0/255.0  alpha:1.0];
     
     cell.infoLabel.text = self.dataArray[indexPath.row];
-    cell.indexpath  = indexPath;
+    
     if (indexPath.row == self.dataArray.count - 1) {
         
-        cell.topView.hidden = NO;
-        cell.infoLabel.hidden = YES;
-    } else {  
+        cell.topView.hidden = YES;
+//        cell.infoLabel.hidden = YES;
+    } else {
         cell.topView.hidden = YES;
         cell.toTopCconstraint.constant = -10;
         
@@ -246,8 +281,9 @@
         
         self.cellDidSelectBlock(self.dataArray[indexPath.row],indexPath.row);
     }
+
     
-    indexPath.row==0 ?  :[self dissMissView];
+    [self dissMissView];
 }
 
 
@@ -295,7 +331,7 @@
     
     if (gestureRecognizer == self.sheetTap) {
         
-        if ([touch.view isDescendantOfView:self.actionSheetTableView]) {
+        if ([touch.view isDescendantOfView:self.actionSheetTableView]|| [touch.view isDescendantOfView:self.buttomView]) {
             return NO;
         }
         
@@ -314,29 +350,36 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    if (indexPath.row == self.dataArray.count - 1) {
-        
-        return 54;
-        
-    } else {
-        
+//    if (indexPath.row == self.dataArray.count - 1) {
+//        
+//        return 54;
+//        
+//    } else {
+    
         return 44;
-    }
+//    }
     
 }
 
 
 - (void)dissMissView{
+    
+    GXHUserDef.Array_ips = self.dataArray;
     __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:.3 animations:^{
         [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
         weakSelf.actionSheetTableView.frame = CGRectMake(0, CCPHEIGHT, CCPWIDTH, weakSelf.recodeTableViewHeight);
-    } completion:^(BOOL finished) {
+        weakSelf.buttomView.frame = CGRectMake(0, CCPHEIGHT, CCPWIDTH, weakSelf.recodeTableViewHeight);
         
+    } completion:^(BOOL finished) {
+         
         weakSelf.actionSheetTableView = nil;
         
         [weakSelf removeFromSuperview];
     }];
+    
+    
+    
 }
 
 

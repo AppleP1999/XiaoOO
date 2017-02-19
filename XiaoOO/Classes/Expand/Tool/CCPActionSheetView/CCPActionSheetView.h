@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "GXHUserDefaults+appSetting.h"
+#import "DDTextFieldButton.h"
 typedef void(^cellDidSelectBlock)(NSString *indexString,NSInteger index);
 
 typedef void(^closeAlertviewBlock)();
@@ -40,6 +42,6 @@ typedef enum viewAnimateDirection {
 - (instancetype) initWithAlertView:(UIView *)alertView;
 
 - (void) closeAlertView:(closeAlertviewBlock) closeAlertviewBlock;
-
-
+@property (strong,nonatomic)NSMutableArray *dataArray;
+-(void) updateTableView;
 @end

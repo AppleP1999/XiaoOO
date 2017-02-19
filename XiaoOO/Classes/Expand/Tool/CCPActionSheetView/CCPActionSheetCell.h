@@ -15,5 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *infoLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *toTopCconstraint;
-@property(nonatomic,strong)NSIndexPath * indexpath;
+
+
+
 @end

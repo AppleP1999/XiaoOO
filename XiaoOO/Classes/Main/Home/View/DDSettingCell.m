@@ -8,7 +8,7 @@
 
 #import "DDSettingCell.h"
 #import "CCPActionSheetView.h"
-#import "DDInputAccessoryView.h"
+
 #import "GXHUserDefaults+appSetting.h"
 
 @interface DDSettingCell ()
@@ -18,6 +18,7 @@
 @property (nonatomic, strong)UILabel  * lab_desc;
 @property(nonatomic,strong)UIButton  * btn_edit_ip;
 @property(nonatomic,strong)NSMutableArray * dataArray;
+
 @end
 @implementation DDSettingCell
 
@@ -32,6 +33,7 @@
         [self.lab_desc setFont:FONT_PingHei_Text(20)];
         self.lab_desc.text = @"192.168.1.1";
     }
+    
     return _lab_desc;
 }
 -(UIButton *)btn_edit_ip{
@@ -58,6 +60,8 @@
     if (indexpath.row==0) {
 
         [self.contentView addSubview:self.lab_desc];
+  
+        
     }
 }
 -(void)initUI
@@ -100,43 +104,16 @@
 }
 -(void)all_action
 {
+    
     [[self.Switch rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UISwitch* x) {
         NSLog(@"Switch -%@ Switch",x);
+        
+        !self.block_btn_SwitchOn ?:self.block_btn_SwitchOn(self.indexpath.row,x.on);
     }];
     [[self.btn_edit_ip rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton* x) {
         NSLog(@"- btn_edit_ip  -");
-      __block  NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        NSMutableArray *  arr =  [NSMutableArray array];
-        
-//        [arr addObjectsFromArray:GXHUserDef.Array_ips];
+        !self.block_btn_SwitchOn ?:self.block_btn_SwitchOn(self.indexpath.row,1);
 
-        
-        [arr addObject:@"1"];
-        [GXHUserDef.Array_ips enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            [arr addObject:obj];
-        }];
-        NSLog(@"gxh_fetchCurrentKeyValues ,%@",[GXHUserDef gxh_fetchCurrentKeyValues]);
-        
-        
-        CCPActionSheetView *actionSheetView = [[CCPActionSheetView alloc]initWithActionSheetArray:arr];
-        
-       __block NSMutableArray * array = [NSMutableArray array];
-        [actionSheetView cellDidSelectBlock:^(NSString *indexString, NSInteger index) {
-            NSLog(@"  view -  %@  ",indexString);
-            if (index==0) {
-                [DDInputAccessoryView showBlock:^(NSString *contentStr) {
-                    
-                    userDefaults = [NSUserDefaults standardUserDefaults];
-                    
-                    [array addObject:contentStr];
-                    GXHUserDef.Array_ips = array;
-//                    [userDefaults setObject:array forKey:@"settingDataArray_ip"];
-//                    [userDefaults synchronize];
-
-                }];
-            }
-        }];
- 
     }];
     
 

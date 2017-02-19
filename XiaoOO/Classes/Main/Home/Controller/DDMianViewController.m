@@ -145,6 +145,7 @@
         make.size.mas_equalTo(self.btn_shart.currentImage.size);
         make.centerX.mas_equalTo(self.view).offset(45) ;
         make.top.mas_equalTo(setHeight(141)) ;
+        
     }];
     [self.btn_set mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(10);
