@@ -20,5 +20,6 @@
 #import "Macros.h"
 #import "DDConst.h"
 #import "UIBarButtonItem+Extension.h"
+#import "UIViewController+backImgView.h"
 //#import <ReactiveCocoa/ReactiveCocoa.h>
 #endif /* PrefixHeader_pch */

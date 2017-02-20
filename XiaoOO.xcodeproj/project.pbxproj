@@ -50,6 +50,11 @@
 		3C90FC231E55957B006C15DF /* DDConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FC221E55957B006C15DF /* DDConst.m */; };
 		3C90FC261E5598D8006C15DF /* DDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FC251E5598D8006C15DF /* DDNavigationController.m */; };
 		3C90FC2C1E559F6E006C15DF /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C90FC2B1E559F6E006C15DF /* UIBarButtonItem+Extension.m */; };
+		3C9957F91E5A7D33005E4580 /* DDChatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9957F81E5A7D33005E4580 /* DDChatVC.m */; };
+		3C9957FC1E5A7E65005E4580 /* DDChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9957FB1E5A7E65005E4580 /* DDChatCell.m */; };
+		3C9957FF1E5A8495005E4580 /* DDChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9957FE1E5A8495005E4580 /* DDChatModel.m */; };
+		3C9958021E5A886E005E4580 /* DDBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9958011E5A886E005E4580 /* DDBaseVC.m */; };
+		3C9958091E5A8AC1005E4580 /* UIViewController+backImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9958081E5A8AC1005E4580 /* UIViewController+backImgView.m */; };
 		3C9C56FF1E56F249009EF91D /* GXHUserDefaults+appSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C56FE1E56F249009EF91D /* GXHUserDefaults+appSetting.m */; };
 		3C9C57071E56FAFA009EF91D /* GXHUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C57061E56FAFA009EF91D /* GXHUserDefaults.m */; };
 		3CC965EA1E3494B800E07085 /* DDInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC965E91E3494B800E07085 /* DDInputAccessoryView.m */; };
@@ -155,6 +160,16 @@
 		3C90FC251E5598D8006C15DF /* DDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNavigationController.m; sourceTree = "<group>"; };
 		3C90FC2A1E559F6E006C15DF /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		3C90FC2B1E559F6E006C15DF /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		3C9957F71E5A7D33005E4580 /* DDChatVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDChatVC.h; sourceTree = "<group>"; };
+		3C9957F81E5A7D33005E4580 /* DDChatVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDChatVC.m; sourceTree = "<group>"; };
+		3C9957FA1E5A7E65005E4580 /* DDChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDChatCell.h; sourceTree = "<group>"; };
+		3C9957FB1E5A7E65005E4580 /* DDChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDChatCell.m; sourceTree = "<group>"; };
+		3C9957FD1E5A8495005E4580 /* DDChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDChatModel.h; sourceTree = "<group>"; };
+		3C9957FE1E5A8495005E4580 /* DDChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDChatModel.m; sourceTree = "<group>"; };
+		3C9958001E5A886E005E4580 /* DDBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBaseVC.h; sourceTree = "<group>"; };
+		3C9958011E5A886E005E4580 /* DDBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBaseVC.m; sourceTree = "<group>"; };
+		3C9958071E5A8AC1005E4580 /* UIViewController+backImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+backImgView.h"; sourceTree = "<group>"; };
+		3C9958081E5A8AC1005E4580 /* UIViewController+backImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+backImgView.m"; sourceTree = "<group>"; };
 		3C9C56FD1E56F246009EF91D /* GXHUserDefaults+appSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GXHUserDefaults+appSetting.h"; sourceTree = "<group>"; };
 		3C9C56FE1E56F249009EF91D /* GXHUserDefaults+appSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GXHUserDefaults+appSetting.m"; sourceTree = "<group>"; };
 		3C9C57051E56FAFA009EF91D /* GXHUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXHUserDefaults.h; sourceTree = "<group>"; };
@@ -218,6 +233,8 @@
 				3C04AC731E28D7F300CE5D94 /* UIView+Extension.m */,
 				3C6A47101E2C599000A31792 /* NSDate+Utilities.h */,
 				3C6A47111E2C599000A31792 /* NSDate+Utilities.m */,
+				3C9958071E5A8AC1005E4580 /* UIViewController+backImgView.h */,
+				3C9958081E5A8AC1005E4580 /* UIViewController+backImgView.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -425,6 +442,8 @@
 		3C76870B1E24DB5A00DDAAC2 /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
+				3C9958001E5A886E005E4580 /* DDBaseVC.h */,
+				3C9958011E5A886E005E4580 /* DDBaseVC.m */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -483,6 +502,8 @@
 				3C7687161E24DB5A00DDAAC2 /* DDMianViewController.m */,
 				3C90FC151E55724E006C15DF /* DDSettingViewVC.h */,
 				3C90FC161E55724E006C15DF /* DDSettingViewVC.m */,
+				3C9957F71E5A7D33005E4580 /* DDChatVC.h */,
+				3C9957F81E5A7D33005E4580 /* DDChatVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -490,6 +511,8 @@
 		3C7687171E24DB5A00DDAAC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C9957FD1E5A8495005E4580 /* DDChatModel.h */,
+				3C9957FE1E5A8495005E4580 /* DDChatModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -517,6 +540,8 @@
 				3C144AB71E542F4C0077F10D /* DDLevelMeterView.m */,
 				3C90FC181E557410006C15DF /* DDSettingCell.h */,
 				3C90FC191E557410006C15DF /* DDSettingCell.m */,
+				3C9957FA1E5A7E65005E4580 /* DDChatCell.h */,
+				3C9957FB1E5A7E65005E4580 /* DDChatCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -886,18 +911,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9957FC1E5A7E65005E4580 /* DDChatCell.m in Sources */,
 				3C7687341E24DB5A00DDAAC2 /* GCDGroup.m in Sources */,
 				3C04AB6B1E28D32900CE5D94 /* MPLoggerFormatter.m in Sources */,
 				3C76873C1E24DB5A00DDAAC2 /* AppDelegate.m in Sources */,
 				3C7686C21E24DB3000DDAAC2 /* main.m in Sources */,
 				3C6A47121E2C599000A31792 /* NSDate+Utilities.m in Sources */,
 				3C90FC171E55724E006C15DF /* DDSettingViewVC.m in Sources */,
+				3C9958021E5A886E005E4580 /* DDBaseVC.m in Sources */,
 				3C7687371E24DB5A00DDAAC2 /* GCDTimer.m in Sources */,
 				3C6A485B1E2CB01800A31792 /* CCPActionSheetView.m in Sources */,
 				3C9C57071E56FAFA009EF91D /* GXHUserDefaults.m in Sources */,
 				3C04AB6C1E28D32900CE5D94 /* MyFileLogger.m in Sources */,
 				3C90FC231E55957B006C15DF /* DDConst.m in Sources */,
 				3C90FC261E5598D8006C15DF /* DDNavigationController.m in Sources */,
+				3C9957F91E5A7D33005E4580 /* DDChatVC.m in Sources */,
 				3C6A484F1E2CABFA00A31792 /* DDSettingItem.m in Sources */,
 				3C76873B1E24DB5A00DDAAC2 /* DDMianViewController.m in Sources */,
 				3C90FC2C1E559F6E006C15DF /* UIBarButtonItem+Extension.m in Sources */,
@@ -905,10 +933,12 @@
 				3C90FC1A1E557410006C15DF /* DDSettingCell.m in Sources */,
 				3C6A48611E2CB81000A31792 /* DDTextFieldButton.m in Sources */,
 				3CED31951E272CAC0020CF40 /* DDTabBarView.m in Sources */,
+				3C9958091E5A8AC1005E4580 /* UIViewController+backImgView.m in Sources */,
 				3CC965EA1E3494B800E07085 /* DDInputAccessoryView.m in Sources */,
 				3C04AC741E28D7F300CE5D94 /* UIView+Extension.m in Sources */,
 				3C6A48571E2CB01800A31792 /* CCPActionSheetCell.m in Sources */,
 				3C7687361E24DB5A00DDAAC2 /* GCDSemaphore.m in Sources */,
+				3C9957FF1E5A8495005E4580 /* DDChatModel.m in Sources */,
 				3C144AB81E542F4C0077F10D /* DDLevelMeterView.m in Sources */,
 				3C9C56FF1E56F249009EF91D /* GXHUserDefaults+appSetting.m in Sources */,
 			);

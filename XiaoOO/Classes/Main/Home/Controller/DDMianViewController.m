@@ -86,7 +86,11 @@
     [[self.btn_shart rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         NSLog(@"Click 开启 VD ");
         
-       
+        Class class_vc = NSClassFromString(@"DDChatVC");
+        id vc = [[class_vc alloc]init];
+
+        
+        [self.navigationController pushViewController:vc animated:YES];
         
     }];
     
@@ -99,11 +103,8 @@
 }
 -(void)setBackImage_Buttons
 {
-    UIImageView * backView= [[UIImageView alloc]initWithImage:GetImage(Img_bg_img)];
-    [self.view addSubview: backView];
-    [backView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.bottom.mas_equalTo(0);
-    }];
+ 
+    [self setImgView_bg];
     UIButton * btn_shart = [[UIButton alloc]init];
 //    btn_shart.backgroundColor = [UIColor redColor];
     [btn_shart setImage:GetImage(Img_home_tinyo) forState:UIControlStateNormal];

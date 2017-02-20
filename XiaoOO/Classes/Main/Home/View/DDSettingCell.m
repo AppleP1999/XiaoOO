@@ -69,6 +69,7 @@
     UISwitch * Switch = [[UISwitch alloc]init];
     Switch.onImage = GetImage(@"set_toggle_on");
     Switch.tintColor = RGB(0, 191, 241);
+    [Switch setOnTintColor:RGB(0, 191, 241)];
     self.accessoryView = Switch;
     self.Switch = Switch;
     
@@ -114,6 +115,37 @@
         NSLog(@"- btn_edit_ip  -");
         !self.block_btn_SwitchOn ?:self.block_btn_SwitchOn(self.indexpath.row,1);
 
+//<<<<<<< Updated upstream
+//=======
+//        
+//        
+//        [GXHUserDef.Array_ips enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//            [arr addObject:obj];
+//        }];
+//        [arr addObject:@"1"];
+//        NSLog(@"gxh_fetchCurrentKeyValues ,%@",[GXHUserDef gxh_fetchCurrentKeyValues]);
+//        
+//        
+//        CCPActionSheetView *actionSheetView = [[CCPActionSheetView alloc]initWithActionSheetArray:arr];
+//        
+//       __block NSMutableArray * array = [NSMutableArray array];
+//        [actionSheetView cellDidSelectBlock:^(NSString *indexString, NSInteger index) {
+//            NSLog(@"  view -  %@  ",indexString);
+//            if (index==0) {
+//                [DDInputAccessoryView showBlock:^(NSString *contentStr) {
+//                    
+//                    userDefaults = [NSUserDefaults standardUserDefaults];
+//                    
+//                    [array addObject:contentStr];
+//                    GXHUserDef.Array_ips = array;
+////                    [userDefaults setObject:array forKey:@"settingDataArray_ip"];
+////                    [userDefaults synchronize];
+//
+//                }];
+//            }
+//        }];
+// 
+//>>>>>>> Stashed changes
     }];
     
 
