@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C04AB5D1E2862C700CE5D94 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C04AB5C1E2862C700CE5D94 /* ReactiveCocoa.framework */; };
 		3C04AB611E28757400CE5D94 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C04AB601E28757400CE5D94 /* CocoaLumberjack.framework */; };
-		3C04AB651E28869300CE5D94 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C04AB641E28869300CE5D94 /* CocoaLumberjackSwift.framework */; };
 		3C04AB6B1E28D32900CE5D94 /* MPLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AB681E28D32900CE5D94 /* MPLoggerFormatter.m */; };
 		3C04AB6C1E28D32900CE5D94 /* MyFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AB6A1E28D32900CE5D94 /* MyFileLogger.m */; };
 		3C04AC741E28D7F300CE5D94 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C04AC731E28D7F300CE5D94 /* UIView+Extension.m */; };
@@ -28,6 +26,7 @@
 		3C6A48621E2CB81000A31792 /* DDTextFieldButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6A485F1E2CB81000A31792 /* DDTextFieldButton.m */; };
 		3C6A48631E2CB81000A31792 /* DDTextFieldButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6A48601E2CB81000A31792 /* DDTextFieldButton.xib */; };
 		3C6A48641E2CB81000A31792 /* DDTextFieldButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6A48601E2CB81000A31792 /* DDTextFieldButton.xib */; };
+		3C6ABC2E1E5D8A3B0083B7D0 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C6ABC2D1E5D8A3B0083B7D0 /* data.json */; };
 		3C7686C21E24DB3000DDAAC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7686C11E24DB3000DDAAC2 /* main.m */; };
 		3C7686CD1E24DB3000DDAAC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7686CC1E24DB3000DDAAC2 /* Assets.xcassets */; };
 		3C7686D01E24DB3000DDAAC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7686CE1E24DB3000DDAAC2 /* LaunchScreen.storyboard */; };
@@ -58,6 +57,7 @@
 		3C9C56FF1E56F249009EF91D /* GXHUserDefaults+appSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C56FE1E56F249009EF91D /* GXHUserDefaults+appSetting.m */; };
 		3C9C57071E56FAFA009EF91D /* GXHUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C57061E56FAFA009EF91D /* GXHUserDefaults.m */; };
 		3CC965EA1E3494B800E07085 /* DDInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC965E91E3494B800E07085 /* DDInputAccessoryView.m */; };
+		3CECAA191E5C194700028964 /* UIControl+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CECAA181E5C194700028964 /* UIControl+Block.m */; };
 		3CED31951E272CAC0020CF40 /* DDTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CED31941E272CAC0020CF40 /* DDTabBarView.m */; };
 		3CED31981E27927F0020CF40 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CED31961E2791DE0020CF40 /* Masonry.framework */; };
 /* End PBXBuildFile section */
@@ -92,9 +92,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3C04AB5C1E2862C700CE5D94 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		3C04AB601E28757400CE5D94 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
-		3C04AB641E28869300CE5D94 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 		3C04AB671E28D32900CE5D94 /* MPLoggerFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLoggerFormatter.h; sourceTree = "<group>"; };
 		3C04AB681E28D32900CE5D94 /* MPLoggerFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLoggerFormatter.m; sourceTree = "<group>"; };
 		3C04AB691E28D32900CE5D94 /* MyFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFileLogger.h; sourceTree = "<group>"; };
@@ -116,6 +114,7 @@
 		3C6A485E1E2CB81000A31792 /* DDTextFieldButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTextFieldButton.h; sourceTree = "<group>"; };
 		3C6A485F1E2CB81000A31792 /* DDTextFieldButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTextFieldButton.m; sourceTree = "<group>"; };
 		3C6A48601E2CB81000A31792 /* DDTextFieldButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDTextFieldButton.xib; sourceTree = "<group>"; };
+		3C6ABC2D1E5D8A3B0083B7D0 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		3C7686BD1E24DB3000DDAAC2 /* XiaoOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XiaoOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7686C11E24DB3000DDAAC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3C7686CC1E24DB3000DDAAC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -176,6 +175,8 @@
 		3C9C57061E56FAFA009EF91D /* GXHUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXHUserDefaults.m; sourceTree = "<group>"; };
 		3CC965E81E3494B800E07085 /* DDInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDInputAccessoryView.h; sourceTree = "<group>"; };
 		3CC965E91E3494B800E07085 /* DDInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDInputAccessoryView.m; sourceTree = "<group>"; };
+		3CECAA171E5C194700028964 /* UIControl+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Block.h"; sourceTree = "<group>"; };
+		3CECAA181E5C194700028964 /* UIControl+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Block.m"; sourceTree = "<group>"; };
 		3CED31931E272CAC0020CF40 /* DDTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTabBarView.h; sourceTree = "<group>"; };
 		3CED31941E272CAC0020CF40 /* DDTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTabBarView.m; sourceTree = "<group>"; };
 		3CED31961E2791DE0020CF40 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
@@ -187,8 +188,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C04AB611E28757400CE5D94 /* CocoaLumberjack.framework in Frameworks */,
-				3C04AB651E28869300CE5D94 /* CocoaLumberjackSwift.framework in Frameworks */,
-				3C04AB5D1E2862C700CE5D94 /* ReactiveCocoa.framework in Frameworks */,
 				3CED31981E27927F0020CF40 /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +224,8 @@
 		3C04AC711E28D7F300CE5D94 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				3CECAA171E5C194700028964 /* UIControl+Block.h */,
+				3CECAA181E5C194700028964 /* UIControl+Block.m */,
 				3C9C56FD1E56F246009EF91D /* GXHUserDefaults+appSetting.h */,
 				3C9C56FE1E56F249009EF91D /* GXHUserDefaults+appSetting.m */,
 				3C90FC2A1E559F6E006C15DF /* UIBarButtonItem+Extension.h */,
@@ -299,6 +300,7 @@
 				3C7686CC1E24DB3000DDAAC2 /* Assets.xcassets */,
 				3C7686CE1E24DB3000DDAAC2 /* LaunchScreen.storyboard */,
 				3C7686D11E24DB3000DDAAC2 /* Info.plist */,
+				3C6ABC2D1E5D8A3B0083B7D0 /* data.json */,
 				3C7686C01E24DB3000DDAAC2 /* Supporting Files */,
 			);
 			path = XiaoOO;
@@ -738,9 +740,7 @@
 		3CED318A1E271CE50020CF40 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C04AB641E28869300CE5D94 /* CocoaLumberjackSwift.framework */,
 				3C04AB601E28757400CE5D94 /* CocoaLumberjack.framework */,
-				3C04AB5C1E2862C700CE5D94 /* ReactiveCocoa.framework */,
 				3CED31961E2791DE0020CF40 /* Masonry.framework */,
 			);
 			name = Frameworks;
@@ -816,6 +816,7 @@
 				TargetAttributes = {
 					3C7686BC1E24DB3000DDAAC2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZJ8KYE9989;
 						ProvisioningStyle = Automatic;
 					};
 					3C7686D51E24DB3000DDAAC2 = {
@@ -855,6 +856,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C6ABC2E1E5D8A3B0083B7D0 /* data.json in Resources */,
 				3C6A48591E2CB01800A31792 /* CCPActionSheetCell.xib in Resources */,
 				3C7687381E24DB5A00DDAAC2 /* Placeholder in Resources */,
 				3C90FC1F1E55877A006C15DF /* Ping Hei Text.ttf in Resources */,
@@ -894,9 +896,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -935,6 +935,7 @@
 				3CED31951E272CAC0020CF40 /* DDTabBarView.m in Sources */,
 				3C9958091E5A8AC1005E4580 /* UIViewController+backImgView.m in Sources */,
 				3CC965EA1E3494B800E07085 /* DDInputAccessoryView.m in Sources */,
+				3CECAA191E5C194700028964 /* UIControl+Block.m in Sources */,
 				3C04AC741E28D7F300CE5D94 /* UIView+Extension.m in Sources */,
 				3C6A48571E2CB01800A31792 /* CCPActionSheetCell.m in Sources */,
 				3C7687361E24DB5A00DDAAC2 /* GCDSemaphore.m in Sources */,
@@ -1087,7 +1088,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZJ8KYE9989;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/XiaoOO/Classes/Lib/SDKFile",
@@ -1109,7 +1111,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = ZJ8KYE9989;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/XiaoOO/Classes/Lib/SDKFile",

@@ -4,3 +4,5 @@
 github "Masonry/Masonry"    ~> 1.0.2
 github "ReactiveCocoa/ReactiveCocoa" == 2.5.0
 github "CocoaLumberjack/CocoaLumberjack"  ~>3.0.0
+
+  

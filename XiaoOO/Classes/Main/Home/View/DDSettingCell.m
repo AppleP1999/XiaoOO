@@ -106,48 +106,18 @@
 -(void)all_action
 {
     
-    [[self.Switch rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UISwitch* x) {
-        NSLog(@"Switch -%@ Switch",x);
+    [self.Switch block_TouchUpInside_Action:^(UISwitch* x) {
+        NSLog(@"Switch -%ld ",(long)x.on);
         
         !self.block_btn_SwitchOn ?:self.block_btn_SwitchOn(self.indexpath.row,x.on);
     }];
-    [[self.btn_edit_ip rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton* x) {
+    
+  
+     [self.btn_edit_ip block_TouchUpInside_Action:^(UIButton *button) {
         NSLog(@"- btn_edit_ip  -");
         !self.block_btn_SwitchOn ?:self.block_btn_SwitchOn(self.indexpath.row,1);
-
-//<<<<<<< Updated upstream
-//=======
-//        
-//        
-//        [GXHUserDef.Array_ips enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//            [arr addObject:obj];
-//        }];
-//        [arr addObject:@"1"];
-//        NSLog(@"gxh_fetchCurrentKeyValues ,%@",[GXHUserDef gxh_fetchCurrentKeyValues]);
-//        
-//        
-//        CCPActionSheetView *actionSheetView = [[CCPActionSheetView alloc]initWithActionSheetArray:arr];
-//        
-//       __block NSMutableArray * array = [NSMutableArray array];
-//        [actionSheetView cellDidSelectBlock:^(NSString *indexString, NSInteger index) {
-//            NSLog(@"  view -  %@  ",indexString);
-//            if (index==0) {
-//                [DDInputAccessoryView showBlock:^(NSString *contentStr) {
-//                    
-//                    userDefaults = [NSUserDefaults standardUserDefaults];
-//                    
-//                    [array addObject:contentStr];
-//                    GXHUserDef.Array_ips = array;
-////                    [userDefaults setObject:array forKey:@"settingDataArray_ip"];
-////                    [userDefaults synchronize];
-//
-//                }];
-//            }
-//        }];
-// 
-//>>>>>>> Stashed changes
-    }];
-    
+     }];
+ 
 
 }
 -(void)setTitile:(NSString *)titile

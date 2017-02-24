@@ -52,7 +52,7 @@
     v.y = 90;
     [self.view addSubview:v];
     
-    [[btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton * x)
+    [btn  block_TouchUpInside_Action:^(UIButton * x)
     {
         
         NSArray *familyNames = [UIFont familyNames];
@@ -79,11 +79,12 @@
         make.size.mas_equalTo(CGSizeMake(200, 50));
         make.top.left.mas_equalTo(30);
     }];
+    
 }
 
 -(void)All_action
 {
-    [[self.btn_shart rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+    [self.btn_shart  block_TouchUpInside_Action:^(id x) {
         NSLog(@"Click 开启 VD ");
         
         Class class_vc = NSClassFromString(@"DDChatVC");
@@ -94,7 +95,7 @@
         
     }];
     
-    [[self.btn_set rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+    [self.btn_set  block_TouchUpInside_Action:^(id x) {
         NSLog(@"Click -- 设置");
         DDSettingViewVC * ddsettingVC = [[DDSettingViewVC alloc]init];
         ddsettingVC.title = @"开发者设置";
@@ -145,9 +146,11 @@
     [self.btn_shart mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(self.btn_shart.currentImage.size);
         make.centerX.mas_equalTo(self.view).offset(45) ;
-        make.top.mas_equalTo(setHeight(141)) ;
-        
+        make.top.mas_equalTo(setHeight(141.0+20.0)) ;
+        NSLog(@"setHeight --- %f  kScreenHeightRatio %f " , setHeight(161.0),kScreenHeightRatio);
+
     }];
+
     [self.btn_set mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(10);
         make.bottom.mas_equalTo(-10);

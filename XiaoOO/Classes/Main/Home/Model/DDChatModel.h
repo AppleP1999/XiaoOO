@@ -20,4 +20,5 @@ typedef void (^black_cellHeight)();
 @property (nonatomic,assign) MessageType messageType;
 @property(nonatomic,copy)black_cellHeight  block_celH;
 @property(nonatomic,assign) CGFloat model_h;
+
 @end

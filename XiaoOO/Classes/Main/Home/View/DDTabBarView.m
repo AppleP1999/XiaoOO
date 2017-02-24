@@ -27,6 +27,8 @@ static const NSString * tabbar_help_highlight = @"tabbar_help_highlight";
 @property  (nonatomic,weak) UIButton *btn_conter;
 @property  (nonatomic,weak)DDLevelMeterView * img_left_meterView;
 @property  (nonatomic,weak)DDLevelMeterView * img_rithg_meterView;
+@property (nonatomic,copy)block_Click Click_btnL;
+@property (nonatomic,copy)block_Click Click_btnR;
 @end
 @implementation DDTabBarView
 - (instancetype)init
@@ -93,22 +95,20 @@ static const NSString * tabbar_help_highlight = @"tabbar_help_highlight";
 }
 -(void)Allactions
 {
-
-    [[self.btn_Left rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+    [self.btn_Left block_TouchUpInside_Action:^(UIButton *button) {
         NSLog(@"btn_Left----Click---- Click ----Click ");
-        
-        NSArray *dataArray =  @[@"4",@"3",@"2",@"1",@"4",@"3",@"2",@"1",@"3",@"2",@"1"]; //[NSArray arrayWithObjects:@"小视频", @"拍照",@"从手机相册选择",@"取消",nil];
-        
-        CCPActionSheetView *actionSheetView = [[CCPActionSheetView alloc]initWithActionSheetArray:dataArray];
-        
-        [actionSheetView cellDidSelectBlock:^(NSString *indexString, NSInteger index) {
-            NSLog(@"  view -  %@  ",indexString);
-        
-        }];
-
+        self.Click_btnL();
+    }];
+    [self.btn_Rithg block_TouchUpInside_Action:^(UIButton *button) {
+        self.Click_btnR();
     }];
     
     
+}
+-(void)block_Click_btnL:(block_Click)btnL btnR:(block_Click)btnR
+{
+    self.Click_btnR = btnR;
+    self.Click_btnL = btnL;
 }
 -(void)set_Constraints
 {

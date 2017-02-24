@@ -18,9 +18,29 @@
 //文字
 @property(nonatomic,weak)UILabel * lab_text;
 @property(strong,nonatomic) DDChatModel * model;
+
+
 @end
+
 @implementation DDChatCell
 
+
+-(void)setModel:(DDChatModel *)model
+{
+    if (model) {
+        
+        CGFloat wid = Main_Screen_Width - (17+34+11);
+        CGSize  size =  [self sizeWithFont:self.lab_text.font maxSize:CGSizeMake(wid, 2000) textString:model.textString];
+        self.lab_text.text = model.textString;
+        
+        
+        [self  setUIframe:size :model.messageType];
+    }
+    _model = model;
+  
+    
+    
+}
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
@@ -65,6 +85,27 @@
     
     [imgView_backView addSubview:lab_text];
     self.lab_text = lab_text;
+    
+    [self.imgView_icon mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.size.mas_equalTo(CGSizeMake(34, 34));
+ 
+        make.bottom.equalTo(self.imgView_backView.mas_bottom).offset(-2);
+    }];
+    
+    [self.lab_text mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+     
+        make.bottom.equalTo(self.imgView_backView.mas_bottom).offset(-10);;
+        
+    }];
+    [self.imgView_backView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+ 
+        make.height.equalTo(self.lab_text.mas_height).offset(10);
+  
+        
+    }];
 
 }
 -(CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize textString:(NSString *)textString
@@ -81,10 +122,14 @@
     //    获取文本高度
 
     
+    
 }
 - (void) setUIframe:(CGSize) size :(MessageType)type;
 {
-  
+    if (size.width==0) {
+        size.height = 18;
+        size.width = 44;
+    }
     if (type == MyMessageType) {
         self.imgView_icon.image = GetImage(@"dialog_user_head");
         self.imgView_backView.image = GetImage(@"dialog_ask");
@@ -92,7 +137,9 @@
         self.imgView_icon.image = GetImage(@"dialog_tinyo_head");
         self.imgView_backView.image = GetImage(@"dialog_answer");
     }
-    [self.lab_text mas_makeConstraints:^(MASConstraintMaker *make) {
+    
+    
+    [self.lab_text mas_updateConstraints:^(MASConstraintMaker *make) {
         
         make.width.mas_equalTo(size.width-40);
         if (type == MyMessageType) {
@@ -100,13 +147,13 @@
         }else if (type == VDChatMessage){
         make.left.equalTo(self.imgView_icon.mas_right).offset(15);
         }
-        make.bottom.equalTo(self.imgView_backView.mas_bottom).offset(-10);;
+//        make.bottom.equalTo(self.imgView_backView.mas_bottom).offset(-10);;
         
     }];
     
-    [self.imgView_icon mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.imgView_icon mas_updateConstraints:^(MASConstraintMaker *make) {
         
-        make.size.mas_equalTo(CGSizeMake(34, 34));
+//        make.size.mas_equalTo(CGSizeMake(34, 34));
 //        make.width.mas_equalTo(size.width-40);
         if (type == MyMessageType) {
             make.right.mas_equalTo(-12);
@@ -115,21 +162,22 @@
             make.left.mas_equalTo(12);
         }
         
-        make.bottom.equalTo(self.imgView_backView.mas_bottom).offset(-2);
+//        make.bottom.equalTo(self.imgView_backView.mas_bottom).offset(-2);
     }];
-    
-    [self.imgView_backView mas_makeConstraints:^(MASConstraintMaker *make) {
+
+        [self.imgView_backView mas_updateConstraints:^(MASConstraintMaker *make) {
         
         make.width.mas_equalTo(size.width);
         make.height.mas_equalTo(size.height+20);
-        
+            make.height.equalTo(self.lab_text.mas_height).offset(10);
+
         if (type == MyMessageType) {
             make.right.equalTo(self.imgView_icon.mas_left).offset(10);
             
         }else if (type == VDChatMessage){
             make.left.equalTo(self.imgView_icon.mas_right).offset(-10);
         }
-        make.bottom.equalTo(self.contentView.mas_bottom).offset(-10);
+//        make.bottom.equalTo(self.contentView.mas_bottom).offset(-10);
         
     }];
     UIImage * image = self.imgView_backView.image;
@@ -142,11 +190,8 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    CGFloat wid = Main_Screen_Width - (17+34+11);
-    CGSize  size =  [self sizeWithFont:self.lab_text.font maxSize:CGSizeMake(wid, 2000) textString:self.model.textString];
-    self.lab_text.text = self.model.textString;
+
     
-    [self  setUIframe:size :self.model.messageType];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
